@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+
+}
+nav{
+  background:#1b1b1b;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo {
+/*float: left;
+  padding-left: 70px;
+  padding-top:20px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Cambria Math";
+  color:white;*/
+  float: left;
+  color: yellowgreen;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 60px;
+  font-family: "Cambria Math";
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: yellowgreen;
+  border-radius: 5px;
+  box-shadow:  0 0 5px yellowgreen,
+               0 0 10px greenyellow;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid yellow;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+p{
+  font-size: 30px;
+  font-weight: 500;
+}
+.header{
+  min-height:100vh;
+  width:100%;
+  background-image: url("headpage.jpg");
+  background-position: center;
+  background-size: cover;
+  position:relative;
+}
+.text-box{
+  width:90%;
+  color:white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align:center;
+}
+.text-box h1{
+  font-size:62px;
+
+}
+.text-box p{
+  margin:10px 0 40px;
+  font-size:17px;
+  color:white;
+}
+.dzn_poveke{
+  display:inline-block;
+  text-decoration: none;
+  color:white;
+  border:1px solid #fff;
+  padding:12px 34px;
+  font-size:15px;
+  background: #8aec8a;
+  position:relative;
+  cursor:pointer;
+}
+.dzn_poveke:hover{
+  border:1px solid forestgreen;
+  background:forestgreen;
+  transition:1s;
+}
+.Vtora{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+.Vtora h1{
+  font-size:36px;
+  font-weight: 600;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.vtora-col{
+  flex-basis:25%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+
+}
+.vtora-col img{
+  width:100%;
+  height: 100%;
+
+  display: block;
+}
+.layer{
+  background:transparent;
+  height: 100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left: 0;
+  transition:0.5s;
+}
+.layer:hover{
+  background: rgba(226,0,0,0.7);
+}
+.layer h3{
+  width:100%;
+  font-weight: 500;
+  color:white;
+  font-size:26px;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  bottom:49%;
+  opacity:1;
+
+}
+#footer{
+  padding: 100px 0 20px;
+  background:black;
+  color: white;
+}
+.footer-row{
+  width:80%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height:250px;
+}
+.footer-left, .footer-right, .footer-center{
+  flex-basis: 32%;
+  padding:10px;
+  margin-bottom: 20px;
+}
+.footer-right{
+  text-align: right;
+}
+.footer-row h1{
+  margin:10px 0;
+}
+.footer-row  p{
+  line-height: 35px;
+}
+/*Cicaci**/
+.headercicaci{
+  min-height: 500px;
+  width:100%;
+  background-image: url("lioneye.webp");
+  background-position: center;
+  background-size: 100% 500px;
+  position:relative;
+}
+.cicaci{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+.cicaci h1{
+  font-size:36px;
+  font-weight: 600;
+}
+.rowc {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.vtora-colc{
+  flex-basis:19%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+
+}
+.vtora-colc img{
+  width:100%;
+  height: 100%;
+
+  display: block;
+}
+.layerc{
+  background:transparent;
+  height: 100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left: 0;
+  transition:0.5s;
+}
+.layerc:hover{
+  background: rgba(50,50,50,0.7);
+}
+.layerc h3{
+  width:100%;
+  font-weight: 500;
+  color:white;
+  font-size:26px;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layerc:hover h3{
+  bottom:49%;
+  opacity:1;
+
+}
+/*---Ptici---*/
+.headerptici{
+  min-height: 450px;
+  width:100%;
+  background-image: url("eagle.jpg");
+  background-position: center;
+  background-size: 100% 450px;
+  position:relative;
+
+}
+.rowp {
+  margin-top: 5%;
+  display: flex;
+  justify-content:space-around;
+
+
+}
+.vtora-colp{
+  flex-basis:30%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.vtora-colp img{
+  width:100%;
+  height: 100%;
+
+  display: block;
+}
+.layerp{
+  background:transparent;
+  height: 100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left: 0;
+  transition:0.5s;
+}
+.layerp:hover{
+  background: rgba(50,50,50,0.7);
+}
+.layerp h3{
+  width:100%;
+  font-weight: 500;
+  color:white;
+  font-size:26px;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layerp:hover h3{
+  bottom:49%;
+  opacity:1;
+
+}
+/*---Reptili--*/
+.headerreptili{
+  min-height: 300px;
+  width:100%;
+  background-image: url("zmej.jpg");
+  background-position: center;
+  background-size: 100% 300px;
+  position:relative;
+}
+/*--Ribi--*/
+.headerribi {
+  min-height: 400px;
+  width: 100%;
+  background-image: url("ribi.jpg");
+  background-position: center;
+  background-size: 100% 400px;
+  position: relative;
+}
+.headerl{
+  background:none;
+  min-height: 300px;
+  width: 100%;
+
+}
+.headerm{
+  min-height: 500px;
+  width: 100%;
+  background-image: url("headpage.jpg");
+  background-position: center;
+  background-size: 100% 450px;
+  position: relative;
+}
+
+.footer-row p{
+  font-size: 20px;
+
+}

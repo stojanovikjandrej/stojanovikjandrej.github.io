@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Zoo Tetovo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<section class="headerm">
+    <nav>
+        <div class="logo">
+TeZoo
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="naslovna1.html">Насловна</a></li>
+            <li>
+                <label for="btn-1" class="show">Животни +</label>
+                <a href="#">Животни</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="cicaci.html">Цицачи</a></li>
+                    <li><a href="ptici.html">Птици</a></li>
+                    <li><a href="reptili.html">Рептили</a></li>
+                    <li><a href="ribi.html">Риби</a> </li>
+                </ul>
+            </li>
+
+            <li><a href="#">За нас</a></li>
+            <li><a href="#">Мапа</a></li>
+        </ul>
+    </nav>
+</section>
+<section class="iframe">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1804.3283017182598!2d20.981711036365684!3d42.00817769521849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353f0c43026a14d%3A0x55c31e024bc9ac5e!2z0JbQtdC90LAg0J_QsNGA0LosIEJvcmlzIEtpZHJpa2osIFRldG92byAxMjIw!5e0!3m2!1sen!2smk!4v1631649812710!5m2!1sen!2smk" width="600" height="450" style="border:5px solid darkslategrey;margin-left: 450PX;margin-top: 20px;" allowfullscreen=""></iframe>
+</section>
+<section id="footer">
+    <div class="footer-row">
+        <div class="footer-left">
+            <h3>Работно време</h3>
+            <p><i class="fas fa-clock"></i>Понеделник до Петок-9:00 до 17:00</p>
+            <p><i class="far fa-clock"></i>Сабота и Недела-8:00 до 18:00</p>
+        </div>
+        <div class="footer-center">
+            <img src="beogradski-zooloski-vrt-37.jpg" width="300px" height="200px" >
+            <p style="font-size: xx-large "><b>ДОБРЕДОЈДОВТЕ</b><i class="far fa-smile-beam"></i></p>
+        </div>
+        <div class="footer-right">
+            <h3>Контакт</h3>
+            <p>Борис Кидрич 105,Тетово<i class="fa fa-map-marker"></i></p>
+            <p>zootetovo@gmail.com<i class="fas fa-envelope-square"></i></p>
+            <p>+38971367490<i class="fa fa-phone"></i></p>
+            <!-- <label for="email">Внесете го вашот email</label>
+             <input type="email" id="email" size="20" minlength="3" max="64" placeholder="petar@example.com";style="background-color:white; height:50px; width:50px">
+ -->
+        </div>
+    </div>
+
+</section>
+<script>
+    $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+    });
+</script>
+
+
+</body>
+</html>
